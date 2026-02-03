@@ -63,11 +63,11 @@ else:
     print(f"R² Score: {score:.3f}")
 
 # Save model and scaler
-with open('classification_model_20260204_020615.pkl', 'wb') as f:
+with open('classification_model_20260204_021139.pkl', 'wb') as f:
     pickle.dump({
         'model': model,
         'scaler': scaler,
         'label_encoder': le if 'classification' == 'classification' and 'le' in locals() else None
     }, f)
 
-print(f"Model trained and saved to classification_model_20260204_020615.pkl")
+print(f"Model trained and saved to classification_model_20260204_021139.pkl")
